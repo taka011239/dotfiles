@@ -1,0 +1,7 @@
+.emacs.d/backups/
+.emacs.d/history
+.emacs.d/el-get/
+.emacs.d/elpa/
+.emacs.d/ac-comphist.dat
+*~
+*.elc

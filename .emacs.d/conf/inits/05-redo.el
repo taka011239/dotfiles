@@ -1,0 +1,5 @@
+(when (require 'redo+ nil t)
+  (global-set-key (kbd "C-M-/") 'redo)
+  (setq undo-no-redo t)
+  (setq undo-limit 600000)
+  (setq undo-string-limit 900000))
