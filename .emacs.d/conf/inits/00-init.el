@@ -5,7 +5,7 @@
 (setq frame-title-format "%f")
 
 ;; do not disp menuber
-(menu-bar-mode 0)
+(menu-bar-mode t)
 
 ;; do not disp toolbar
 (if window-system
