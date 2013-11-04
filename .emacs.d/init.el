@@ -31,6 +31,15 @@
 ;; note: if installed pkg using package.el, then describ here
   (setq my-packages
     '(auto-complete
+      caml
+      clojure-mode
+      dash
+      erlang
+      exec-path-from-shell
+      f
+      flycheck
+      flymake-cursor
+      flymake-easy
       gh
       ghc
       gist
@@ -44,9 +53,14 @@
       logito
       magit
       migemo
+      nodejs-repl
       pcache
+      pkg-info
       popup
       redo+
+      s
+      tuareg
+      zenburn-theme
       ))
   (require 'cl)
   (mapcar (lambda (x)
