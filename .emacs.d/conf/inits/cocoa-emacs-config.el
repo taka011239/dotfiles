@@ -8,7 +8,7 @@
   (global-whitespace-mode t))
 
 ;; change font Ritcy
-(set-frame-font "ritcy-15")
+(set-frame-font "Ritcy-15")
 
 (if window-system
       (set-frame-size (selected-frame) 140 50))
@@ -19,9 +19,9 @@
 ;;                               :height 160)
 
 ;; japanese font
-;;(set-fontset-font
-;;  nil 'japanese-jisx0208
-;;  (font-spec :family "Hiragino Mincho Pro"))
+(set-fontset-font
+  nil 'japanese-jisx0208
+  (font-spec :family "Hiragino Mincho Pro"))
 
 ;; En : Em = 1 : 2
 ;;(setq face-font-rescale-alist
