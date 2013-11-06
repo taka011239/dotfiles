@@ -2,6 +2,9 @@
 (setq file-name-coding-system 'utf-8-hfs)
 (setq locale-coding-system 'utf-8-hfs)
 
+;; change directory to home
+(cd "~/")
+
 ;; if emacs is cocoa, must set $PATH
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize)
