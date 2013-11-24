@@ -36,7 +36,7 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export GOENVTARGET=$HOME/.goenvtarget
 export GOENVGOROOT=$HOME/goenv
-export GOENVHOME=$HOME/Document/go_workspace
+export GOENVHOME=$HOME/Documents/go_workspace
 export PATH=$GOENVTARGET:$PATH
 source $HOME/github/goenv/shellscripts/goenvwrapper.sh
 
