@@ -59,6 +59,7 @@
       popup
       redo+
       s
+      scala-mode2
       tuareg
       zenburn-theme
       ))
