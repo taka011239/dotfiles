@@ -1,5 +1,5 @@
 #!/bin/bash
-DOTFILES="$HOME"/.dotfiles
+DOTFILES="$HOME"/dotfiles
 cd "$HOME"
 
 # set bash config files
