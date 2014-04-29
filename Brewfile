@@ -58,6 +58,8 @@ install subversion
 install tmux
 install tree
 install yasm
+install libcroco
+install librsvg
 # Brew Cask
 install brew-cask
 # Cask Packages

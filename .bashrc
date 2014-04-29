@@ -55,6 +55,9 @@ export OCAML_ANNOT=1
 # Yesod
 export PATH=$PATH:$HOME/Library/Haskell/bin
 
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+
 # Homebrew API Token
 if [ -f ~/.brew_api_token ];then
     source ~/.brew_api_token
