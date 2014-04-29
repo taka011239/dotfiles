@@ -11,6 +11,7 @@ linux*)
 esac
 
 alias ocaml='ledit ocaml'
+alias simplehttpd='python -m SimpleHTTPServer 8080'
 
 # Add Android SDK's Path
 export ANDROID_HOME=/Users/t-tsuchida/android-sdk-macosx
@@ -26,7 +27,7 @@ alias emacs='/usr/local/bin/emacs -nw'
 
 # Use nvm for Node.js
 source ~/nvm/nvm.sh
-nvm use v0.9.9
+#nvm use v0.9.9
 
 # Config pythonbrew
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
@@ -44,8 +45,8 @@ source $HOME/github/goenv/shellscripts/goenvwrapper.sh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Initialization for FDK command line tools.Tue Sep 25 22:58:00 2012
-export FDK_EXE="/Users/t-tsuchida/bin/FDK/Tools/osx"
-export PATH=${PATH}:"/Users/t-tsuchida/bin/FDK/Tools/osx"
+#export FDK_EXE="/Users/t-tsuchida/bin/FDK/Tools/osx"
+#export PATH=${PATH}:"/Users/t-tsuchida/bin/FDK/Tools/osx"
 
 # OPAM configuration
 . /Users/t-tsuchida/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
@@ -53,3 +54,12 @@ export OCAML_ANNOT=1
 
 # Yesod
 export PATH=$PATH:$HOME/Library/Haskell/bin
+
+# Homebrew API Token
+if [ -f ~/.brew_api_token ];then
+    source ~/.brew_api_token
+fi
+
+# Homebrew Cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
+
