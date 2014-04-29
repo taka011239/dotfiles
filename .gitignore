@@ -1,6 +1,8 @@
 .emacs.d/backups/
-.emacs.d/history
+.emacs.d/auto-save-list/
 .emacs.d/elpa/
 .emacs.d/el-get/
 .emacs.d/ac-comphist.dat
+.emacs.d/url/
+.emacs.d/history
 *~
