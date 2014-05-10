@@ -66,3 +66,6 @@ fi
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
 
+# boot2docker
+export DOCKER_HOST=tcp://localhost:4243
+
