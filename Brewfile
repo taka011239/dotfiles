@@ -60,6 +60,8 @@ install tree
 install yasm
 install libcroco
 install librsvg
+install boot2docker
+install docker
 # Brew Cask
 install brew-cask
 # Cask Packages
