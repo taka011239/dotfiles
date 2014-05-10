@@ -1,5 +1,6 @@
 ;; http://www.haskell.org/haskellwiki/Emacs
 (autoload 'ghc-init "ghc" nil t)
+(autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
 
 (add-hook 'haskell-mode-hook '(lambda ()
