@@ -30,7 +30,7 @@ source ~/nvm/nvm.sh
 #nvm use v0.9.9
 
 # Config pythonbrew
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+# [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 # Config GoLang
 export GOROOT=/usr/local/go
@@ -40,6 +40,7 @@ export GOENVGOROOT=$HOME/goenv
 export GOENVHOME=$HOME/Documents/go_workspace
 export PATH=$GOENVTARGET:$PATH
 source $HOME/github/goenv/shellscripts/goenvwrapper.sh
+export PATH=$PATH:$HOME/go_appengine
 
 # Config rvm
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -56,7 +57,7 @@ export OCAML_ANNOT=1
 export PATH=$PATH:$HOME/Library/Haskell/bin
 
 # Homebrew
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/bin:/usr/bin:$PATH
 
 # Homebrew API Token
 if [ -f ~/.brew_api_token ];then
@@ -67,5 +68,8 @@ fi
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
 
 # boot2docker
-export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_HOST=tcp://localhost:2375
 
+
+# added by travis gem
+[ -f /Users/t-tsuchida/.travis/travis.sh ] && source /Users/t-tsuchida/.travis/travis.sh
