@@ -146,3 +146,7 @@
   (condition-case nil
     (line-move arg)
     (end-of-buffer)))
+
+;; tramp config
+(eval-after-load 'tramp
+  '(vagrant-tramp-enable))
