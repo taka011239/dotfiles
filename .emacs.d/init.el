@@ -2,6 +2,9 @@
 (when (< emacs-major-version 23)
   (defvar user-emacs-directory "~/.emacs.d/"))
 
+;; Exec server
+(server-start)
+
 ;; LOADPATH
 (defun add-to-load-path (&rest paths)
   (let (path)
@@ -61,6 +64,7 @@
       s
       scala-mode2
       tuareg
+      vagrant-tramp
       zenburn-theme
       ))
   (require 'cl)
