@@ -6,6 +6,9 @@ cd "$HOME"
 ln -s "$DOTFILES"/.bashrc .bashrc
 ln -s "$DOTFILES"/.bash_profile .bash_profile
 
+# set tmux config file
+ln -s "$DOTFILES"/.tmux.conf .tmux.conf
+
 # set emacs config file
 ln -s "$DOTFILES"/.emacs.d .emacs.d
 
