@@ -65,6 +65,7 @@ install docker
 # Brew Cask
 install brew-cask
 # Cask Packages
+cask install boot2docker
 # Remove outdated versions
 cleanup
 
