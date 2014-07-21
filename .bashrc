@@ -12,6 +12,9 @@ esac
 
 alias ocaml='ledit ocaml'
 alias simplehttpd='python -m SimpleHTTPServer 8080'
+alias docker_rm_all='docker rm $(docker ps -a -q)'
+# alias docker_rmi_unused="docker rmi $(docker images -a | awk '/^<none>/{print $3}')"
+alias docker_rmi_all='docker rmi &(docker images -a)'
 
 # Add Android SDK's Path
 export ANDROID_HOME=/Users/t-tsuchida/android-sdk-macosx
