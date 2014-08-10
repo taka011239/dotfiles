@@ -29,8 +29,8 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 alias emacs='/usr/local/bin/emacs -nw'
 
 # Use nvm for Node.js
-source ~/nvm/nvm.sh
-#nvm use v0.9.9
+export NVM_DIR="/Users/t-tsuchida/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm 
 
 # Config pythonbrew
 # [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
