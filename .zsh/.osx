@@ -1,0 +1,5 @@
+PATH=/usr/local/bin:$PATH
+
+# Gradle(brew)
+export GRADLE_HOME=/usr/local/Cellar/gralde/2.0
+export PATH=$PATH:$GRADLE_HOME/bin
