@@ -62,10 +62,12 @@ install libcroco
 install librsvg
 install boot2docker
 install docker
+install zsh
+install zsh-completions
+install htop-osx
 # Brew Cask
 install brew-cask
 # Cask Packages
-cask install boot2docker
 # Remove outdated versions
 cleanup
 
