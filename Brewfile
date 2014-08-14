@@ -65,6 +65,8 @@ install docker
 install zsh
 install zsh-completions
 install htop-osx
+install gradle
+install android
 # Brew Cask
 install brew-cask
 # Cask Packages

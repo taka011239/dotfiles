@@ -17,8 +17,7 @@ alias docker_rm_all='docker rm $(docker ps -a -q)'
 alias docker_rmi_all='docker rmi &(docker images -a)'
 
 # Add Android SDK's Path
-export ANDROID_HOME=/Users/t-tsuchida/android-sdk-macosx
-PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Config VIM
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
