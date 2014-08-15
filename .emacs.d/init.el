@@ -66,6 +66,7 @@
       tuareg
       vagrant-tramp
       zenburn-theme
+      flymake-jshint
       ))
   (require 'cl)
   (mapcar (lambda (x)

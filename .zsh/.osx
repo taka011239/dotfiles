@@ -1,0 +1,8 @@
+PATH=/usr/local/bin:$PATH
+
+# Android SDK(brew)
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# Gradle(brew)
+export GRADLE_HOME=/usr/local/Cellar/gradle/2.0
+export PATH=$PATH:$GRADLE_HOME/bin

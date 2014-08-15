@@ -17,8 +17,7 @@ alias docker_rm_all='docker rm $(docker ps -a -q)'
 alias docker_rmi_all='docker rmi &(docker images -a)'
 
 # Add Android SDK's Path
-export ANDROID_HOME=/Users/t-tsuchida/android-sdk-macosx
-PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Config VIM
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -29,8 +28,8 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 alias emacs='/usr/local/bin/emacs -nw'
 
 # Use nvm for Node.js
-source ~/nvm/nvm.sh
-#nvm use v0.9.9
+export NVM_DIR="/Users/t-tsuchida/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm 
 
 # Config pythonbrew
 # [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc

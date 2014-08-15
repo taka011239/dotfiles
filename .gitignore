@@ -8,3 +8,4 @@
 .emacs.d/var/
 .emacs.d/tramp
 *~
+*.zsh/.zcompdump
