@@ -70,6 +70,8 @@ install android
 # Brew Cask
 install brew-cask
 # Cask Packages
+install vagrant
+install virtualbox
 # Remove outdated versions
 cleanup
 
