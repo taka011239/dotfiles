@@ -41,6 +41,8 @@ install nkf
 install nmap
 install objective-caml
 install opam
+install coq
+install ssreflect
 install openssl
 install phantomjs
 install play
@@ -68,7 +70,7 @@ install htop-osx
 install gradle
 install android
 # Brew Cask
-install brew-cask
+install caskroom/cask/brew-cask
 # Cask Packages
 install vagrant
 install virtualbox
