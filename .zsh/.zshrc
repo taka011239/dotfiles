@@ -92,8 +92,5 @@ fi
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
 
-# boot2docker
-export DOCKER_HOST=tcp://localhost:2375
-
 # added by travis gem
 [ -f /Users/t-tsuchida/.travis/travis.sh ] && source /Users/t-tsuchida/.travis/travis.sh

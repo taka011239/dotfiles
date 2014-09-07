@@ -3,6 +3,9 @@ PATH=/usr/local/bin:$PATH
 # Android SDK(brew)
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+# boot2docker
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+
 # Gradle(brew)
 export GRADLE_HOME=/usr/local/Cellar/gradle/2.0
 export PATH=$PATH:$GRADLE_HOME/bin
