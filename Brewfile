@@ -6,8 +6,10 @@ tap homebrew/dupes || true
 tap homebrew/headonly || true
 tap homebrew/versions || true
 tap homebrew/science || true
-tap phinze/homebrew-cask || true
+tap caskroom/cask || true
 tap josegonzalez/php || true
+tap peco/peco || true
+tap motemen/ghq || true
 # Packages
 install apple-gcc42
 install astyle
@@ -72,6 +74,8 @@ install gradle
 install android
 install maxima
 install ossp-uuid
+install peco
+install ghq
 # Brew Cask
 install caskroom/cask/brew-cask
 # Cask Packages
