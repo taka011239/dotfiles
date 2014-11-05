@@ -5,6 +5,7 @@ upgrade
 tap homebrew/dupes || true
 tap homebrew/headonly || true
 tap homebrew/versions || true
+tap homebrew/science || true
 tap phinze/homebrew-cask || true
 tap josegonzalez/php || true
 # Packages
@@ -69,11 +70,15 @@ install zsh-completions
 install htop-osx
 install gradle
 install android
+install maxima
+install ossp-uuid
 # Brew Cask
 install caskroom/cask/brew-cask
 # Cask Packages
 install vagrant
 install virtualbox
+install netbeans
+install xquartz
 # Remove outdated versions
 cleanup
 
