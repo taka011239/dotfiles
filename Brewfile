@@ -76,6 +76,7 @@ install maxima
 install ossp-uuid
 install peco
 install ghq
+install cmigemo
 # Brew Cask
 install caskroom/cask/brew-cask
 # Cask Packages
