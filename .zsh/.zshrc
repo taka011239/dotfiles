@@ -64,13 +64,6 @@ export NVM_DIR="$HOME/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
 # Config GoLang
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
-export GOENVTARGET=$HOME/.goenvtarget
-export GOENVGOROOT=$HOME/goenv
-export GOENVHOME=$HOME/Documents/go_workspace
-export PATH=$GOENVTARGET:$PATH
-source $HOME/github/goenv/shellscripts/goenvwrapper.sh
 export PATH=$PATH:$HOME/go_appengine 
  
 case "${OSTYPE}" in

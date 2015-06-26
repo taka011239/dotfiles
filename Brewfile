@@ -77,6 +77,7 @@ install ossp-uuid
 install peco
 install ghq
 install cmigemo
+install icdiff
 # Brew Cask
 install caskroom/cask/brew-cask
 # Cask Packages
@@ -84,6 +85,7 @@ install vagrant
 install virtualbox
 install netbeans
 install xquartz
+install charles
 # Remove outdated versions
 cleanup
 
