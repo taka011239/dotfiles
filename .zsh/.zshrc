@@ -64,7 +64,8 @@ export NVM_DIR="$HOME/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
 # Config GoLang
-export PATH=$PATH:$HOME/go_appengine 
+[[ -s "/Users/t-tsuchida/.gvm/scripts/gvm" ]] && source "/Users/t-tsuchida/.gvm/scripts/gvm"
+export PATH=$PATH:$HOME/go_appengine
  
 case "${OSTYPE}" in
 # OSX
