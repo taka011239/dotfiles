@@ -1,11 +1,27 @@
+# zsh-completions (installed from homebrew)
+if [ -e /usr/local/share/zsh-completions ]; then
+    fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
 PATH=/usr/local/bin:$PATH
 
-# Android SDK(brew)
+# Android SDK(installed from homebrew)
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # boot2docker
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
 
-# Gradle(brew)
+# Gradle(installed from homebrew)
 export GRADLE_HOME=/usr/local/Cellar/gradle/2.0
 export PATH=$PATH:$GRADLE_HOME/bin
+
+# Homebrew API Token
+if [ -f ~/.brew_api_token ];then
+    source ~/.brew_api_token
+fi
+
+# Homebrew Cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
+
+# added by travis gem
+[ -f /Users/t-tsuchida/.travis/travis.sh ] && source /Users/t-tsuchida/.travis/travis.sh

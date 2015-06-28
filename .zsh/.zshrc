@@ -6,15 +6,6 @@ PATH=/usr/local/bin:$PATH
 # key binding
 bindkey -e
 
-# Load Modules
-## load completion
-autoload -U compinit
-compinit
-
-## load colors
-autoload colors
-colors
-
 # change directory
 ## options
 setopt auto_cd
@@ -78,13 +69,11 @@ linux*)
     ;;
 esac
 
-# Homebrew API Token
-if [ -f ~/.brew_api_token ];then
-    source ~/.brew_api_token
-fi
+# Load Modules
+## load completion
+autoload -U compinit
+compinit
 
-# Homebrew Cask
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
-
-# added by travis gem
-[ -f /Users/t-tsuchida/.travis/travis.sh ] && source /Users/t-tsuchida/.travis/travis.sh
+## load colors
+autoload colors
+colors
