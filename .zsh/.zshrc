@@ -1,3 +1,12 @@
+# Load Modules
+## load completion
+autoload -Uz compinit && compinit -u
+autoload -U +X bashcompinit && bashcompinit
+
+## load colors
+autoload colors
+colors
+
 # Env Var
 export LANG=ja_JP.UTF-8
 export EDITOR=vim
@@ -39,11 +48,8 @@ PROMPT=" %{${fg[yellow]}%}%~%{${reset_color}%}
 [%n]$ "
 PROMPT2='[%n]> '
 
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# added by travis gem
-[ -f /Users/t-tsuchida/.travis/travis.sh ] && source /Users/t-tsuchida/.travis/travis.sh
+# Add RVM to PATH for scripting
+PATH=$PATH:~/.rvm/bin
 
 ## Key Bindings
 # bindkey -s "^J" "zsh"
@@ -54,10 +60,17 @@ bindkey "^[r" redo
 export NVM_DIR="$HOME/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
-# Config GoLang
-[[ -s "/Users/t-tsuchida/.gvm/scripts/gvm" ]] && source "/Users/t-tsuchida/.gvm/scripts/gvm"
-export PATH=$PATH:$HOME/go_appengine
- 
+# Config GVM (golang)
+if [ -s ~/.gvm/scripts/gvm ]; then
+    source ~/.gvm/scripts/gvm
+    source ~/.gvm/scripts/completion
+fi
+
+# add travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+
+export PATH=$PATH:~/go_appengine
+
 case "${OSTYPE}" in
 # OSX
 darwin*)
@@ -69,11 +82,5 @@ linux*)
     ;;
 esac
 
-# Load Modules
-## load completion
-autoload -U compinit
-compinit
-
-## load colors
-autoload colors
-colors
+compinit -u
+bashcompinit
