@@ -29,7 +29,7 @@ alias emacs='/usr/local/bin/emacs -nw'
 
 # Use nvm for Node.js
 export NVM_DIR="/Users/t-tsuchida/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm 
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Config pythonbrew
 # [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
@@ -43,9 +43,6 @@ export GOENVHOME=$HOME/Documents/go_workspace
 export PATH=$GOENVTARGET:$PATH
 source $HOME/github/goenv/shellscripts/goenvwrapper.sh
 export PATH=$PATH:$HOME/go_appengine
-
-# Config rvm
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Initialization for FDK command line tools.Tue Sep 25 22:58:00 2012
 #export FDK_EXE="/Users/t-tsuchida/bin/FDK/Tools/osx"

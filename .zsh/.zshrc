@@ -48,9 +48,6 @@ PROMPT=" %{${fg[yellow]}%}%~%{${reset_color}%}
 [%n]$ "
 PROMPT2='[%n]> '
 
-# Add RVM to PATH for scripting
-PATH=$PATH:~/.rvm/bin
-
 ## Key Bindings
 # bindkey -s "^J" "zsh"
 bindkey "^P" history-beginning-search-backward
