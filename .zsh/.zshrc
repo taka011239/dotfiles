@@ -53,15 +53,16 @@ PROMPT2='[%n]> '
 bindkey "^P" history-beginning-search-backward
 bindkey "^[r" redo
 
+# Config rbenv
+export RBENV_ROOT="$HOME/.rbenv"
+if [ -d $RBENV_ROOT ]; then
+    export PATH="$RBENV_ROOT/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
+
 # load nvm
 export NVM_DIR="$HOME/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-
-# Config GVM (golang)
-if [ -s ~/.gvm/scripts/gvm ]; then
-    source ~/.gvm/scripts/gvm
-    source ~/.gvm/scripts/completion
-fi
 
 # add travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
