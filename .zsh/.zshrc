@@ -67,6 +67,15 @@ export NVM_DIR="$HOME/nvm"
 # add travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
+export GOENV_ROOT="$HOME/.goenv"
+if [ -d $GOENV_ROOT ]; then
+    export PATH="$GOENV_ROOT/bin:$PATH"
+    eval "$(goenv init -)"
+fi
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 export PATH=$PATH:~/go_appengine
 
 case "${OSTYPE}" in
