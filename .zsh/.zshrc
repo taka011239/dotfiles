@@ -85,9 +85,11 @@ darwin*)
     ;;
 # Linux
 linux*)
-    [ -f ~/dotfiles/.zsh/.linux ] && ~/dotfiles/.zsh/.linux
+    [ -f ~/dotfiles/.zsh/.linux ] && . ~/dotfiles/.zsh/.linux
     ;;
 esac
+
+[ -f ~/dotfiles/.zsh/.alias ] && . ~/dotfiles/.zsh/.alias
 
 compinit -u
 bashcompinit
