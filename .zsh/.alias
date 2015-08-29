@@ -1,2 +1,3 @@
 alias ghd='cd $(ghq list -p | peco)'
 alias gho='gh-open $(ghq list -p | peco)'
+alias relogin='exec $SHELL -l'

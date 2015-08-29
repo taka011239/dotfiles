@@ -76,7 +76,7 @@ fi
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-export PATH=$PATH:~/go_appengine
+export PATH=~/go_appengine:$PATH
 
 case "${OSTYPE}" in
 # OSX
