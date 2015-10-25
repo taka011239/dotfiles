@@ -8,8 +8,10 @@ fi
 # Android SDK(installed from homebrew)
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
-# boot2docker
-export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
+# docker-machine
+if [ "`docker-machine status default`" = "Running" ]; then
+    eval "$(docker-machine env default)"
+fi
 
 # Gradle(installed from homebrew)
 export GRADLE_HOME=/usr/local/Cellar/gradle/2.0
