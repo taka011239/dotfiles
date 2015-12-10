@@ -67,6 +67,7 @@
       vagrant-tramp
       zenburn-theme
       flymake-jshint
+      js2-mode
       ))
   (require 'cl)
   (mapcar (lambda (x)
