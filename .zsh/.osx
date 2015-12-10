@@ -29,3 +29,6 @@ source '/Users/t-tsuchida/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/t-tsuchida/google-cloud-sdk/completion.zsh.inc'
+
+# chromium depot_tools
+export PATH=$PATH:$HOME/github/depot_tools
