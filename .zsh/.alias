@@ -1,3 +1,4 @@
 alias ghd='cd $(ghq list -p | peco)'
 alias gho='gh-open $(ghq list -p | peco)'
 alias relogin='exec $SHELL -l'
+alias ssh-peco="grep -w Host ~/.ssh/config | peco | awk '{print \$2}' | xargs -o -n 1 ssh"
